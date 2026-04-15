@@ -1,0 +1,9 @@
+{
+  "name": "AI Hyper-Stage",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "docker compose -f .devcontainer/docker-compose.yml up -d"
+}
